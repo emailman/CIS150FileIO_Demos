@@ -1,5 +1,10 @@
 package p1;
 
+/*
+ * Created by emailman on 3/1/2016
+ * Read text from a file
+ */
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
