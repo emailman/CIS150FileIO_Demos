@@ -10,13 +10,9 @@ import java.io.PrintWriter;
 
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
-        File file = new File("output.txt");
-        if (file.exists()) {
-            System.out.println("File exists");
-        }
 
         // Try with resources closes file when done
-        try (PrintWriter output = new PrintWriter(file)) {
+        try (PrintWriter output = new PrintWriter(new File("output.txt"))) {
 
             for (int i = 0; i < 102; i += 2) {
                 output.println(i);
